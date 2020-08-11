@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.fourstack</groupId>
+  <artifactId>java-interview-problems</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>java-interview-problems</name>
+  <description>Interview Problems related to Java</description>
+  
+  <!-- Developers Information -->
+	<developers>
+		<developer>
+			<name>Manjunath HM</name>
+			<email>fourstackdevelopers@gmail.com</email>
+			<roles>
+				<role>developer</role>
+			</roles>
+			<timezone>Asia/Kolkata</timezone>
+		</developer>
+	</developers>
+
+	<!-- SCM (github) Connection Details -->
+	<scm>
+		<connection>scm:git:https://github.com/FourStackDev/java-interview-problems</connection>
+		<developerConnection>scm:git:https://github.com/FourStackDev/java-interview-problems</developerConnection>
+		<url>https://github.com/FourStackDev/java-interview-problems.git</url>
+	</scm>	
+
+	<dependencies>
+		<!-- junit-jupiter-api -->
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+			<version>5.6.0</version>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
