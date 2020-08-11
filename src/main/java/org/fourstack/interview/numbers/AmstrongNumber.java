@@ -1,5 +1,18 @@
 package org.fourstack.interview.numbers;
 
+/**
+ * An Armstrong number of three digits is an integer such that the sum of the
+ * cubes of its digits is equal to the number itself. For example, 371, 153,
+ * 370, 407
+ * 
+ * A positive integer of n digits is called an Armstrong number of order n
+ * (order is number of digits) if.
+ * 
+ * abcd... = pow(a,n) + pow(b,n) + pow(c,n) + pow(d,n) + ....
+ * 
+ * @author Manjunath HM
+ *
+ */
 public class AmstrongNumber {
 
 	public static boolean isAmstrong(int num) {
@@ -12,7 +25,7 @@ public class AmstrongNumber {
 
 		while (num > 0) {
 			int rem = num % 10;
-			num = num / 10;
+			num /= 10;
 
 			sum = sum + (int) Math.pow(rem, digits);
 		}
@@ -23,7 +36,7 @@ public class AmstrongNumber {
 		int count = 0;
 		while (num > 0) {
 			count++;
-			num = num / 10;
+			num /= 10;
 		}
 
 		return count;
