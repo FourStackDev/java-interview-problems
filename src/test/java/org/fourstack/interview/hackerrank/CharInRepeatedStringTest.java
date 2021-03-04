@@ -58,5 +58,33 @@ public class CharInRepeatedStringTest {
 		
 		Assertions.assertEquals(20, CharInRepeatedString.repeatedCharCount(str, ch, range));
 	}
+	
+	@Test
+	public void test_repeatedCharCount_7() {
+		String str = "abaaabadcsa";
+		char ch = 'a';
+		int range = 25;
+		
+		Assertions.assertEquals(14, CharInRepeatedString.repeatedCharCount(str, ch, range));
+	}
+	
+	
+	@Test
+	public void test_repeatedCharCount_8() {
+		String str = "aa";
+		char ch = 'a';
+		int range = 1000000;
+		
+		Assertions.assertEquals(1000000, CharInRepeatedString.repeatedCharCount(str, ch, range));
+	}
+	
+	@Test
+	public void test_repeatedCharCount_9() {
+		String str = "abcdefghijkl";
+		char ch = 'z';
+		int range = 1000000;
+		
+		Assertions.assertEquals(0, CharInRepeatedString.repeatedCharCount(str, ch, range));
+	}
 
 }
